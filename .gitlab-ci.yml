@@ -77,7 +77,7 @@ build_app:
         --upload-file bundles/$APP_FILE)
     - upload_message=$(echo "$upload_resp" | jq -r '.message')
     - |
-        if [[ "$upload_message" == "200 Success" ]]; then
+        if [[ "$upload_message" == "201 Created" ]]; then
             echo "Bundle $APP_FILE uploaded successfully";
         else
             echo "Error uploading bundle $APP_FILE: $upload_message!";

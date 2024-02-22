@@ -1,12 +1,13 @@
 import { StoredCamera } from "./camera";
+import i18n from "./i18n";
 
 const storageKey = 'cameras';
 let cameras: StoredCamera[] = [];
 
 const section = ui.createProjectPanelSection();
-section.add(new ui.Paragraph('Move the camera to an interesting location and click on Save Camera to save the current camera location! You can restore the cameras by click on fly to camera below'))
+section.add(new ui.Paragraph(i18n.Save_Camera_Instruction()));
 
-section.add(new ui.Button(ui.icons.plus, 'Save Camera', async () => {
+section.add(new ui.Button(ui.icons.plus, i18n.Save_Camera(), async () => {
     const name = new Date().toLocaleString();
 
     const camera = map.camera.getCurrentCamera();
@@ -29,7 +30,7 @@ section.add(cameraContainer);
 const addCamera = (camera: StoredCamera) => {
     const section = new ui.Section(new Date(camera.date).toLocaleString());
 
-    section.createAction(ui.icons.close, 'Remove Camera', async () => {
+    section.createAction(ui.icons.close, i18n.Remove_Camera(), async () => {
         cameras.splice(cameras.indexOf(camera), 1);
         save();
         
@@ -42,7 +43,7 @@ const addCamera = (camera: StoredCamera) => {
         cameraContainer.add(section);
     }
 
-    const name = new ui.TextField(null, camera.name, 'Name');
+    const name = new ui.TextField(null, camera.name, i18n.Name());
     section.add(name);
 
     name.onValueChange.subscribe(() => {
@@ -50,7 +51,7 @@ const addCamera = (camera: StoredCamera) => {
         save();
     });
 
-    section.add(new ui.Button('Fly to camera', () => {
+    section.add(new ui.Button(i18n.Fly_To_Camera(), () => {
         map.camera.focus(new map.camera.Camera(
             camera.x, camera.y, camera.z, 
             camera.heading, camera.pitch, camera.roll

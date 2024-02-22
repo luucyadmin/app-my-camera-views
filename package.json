@@ -2,8 +2,8 @@
 	"name": "camera-control",
 	"displayName": "Camera Control",
 	"icon": "icon.svg",
-	"author": "luucy AG",
-	"version": "1.0.1",
+	"author": "LUUCY AG",
+	"version": "1.0.2",
 	"internal": true,
 	"dependencies": {
 		"luucy-types": "^8.14.4",

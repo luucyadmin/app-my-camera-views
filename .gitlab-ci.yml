@@ -57,6 +57,7 @@ build_app:
     - npm i
     - git config user.email "$GITLAB_GIT_USR_EMAIL"
     - git config user.name "$GITLAB_GIT_USR_NAME"
+    - git remote add gitlab_origin $CI_REPOSITORY_URL
     - git status
     - git reset --hard
     - luucy scope build
@@ -83,7 +84,7 @@ build_app:
             echo "Error uploading bundle $APP_FILE: $upload_message!";
             exit -1;
         fi
-    - git push -o ci.skip
+    - git push gitlab_origin HEAD:$CI_COMMIT_REF_NAME -o ci.skip
     #  Pass the variables to the next phase
     - echo "APP_PATH=$APP_PATH" >> app_file.env
     - echo "APP_VERSION=$APP_VERSION" >> app_file.env

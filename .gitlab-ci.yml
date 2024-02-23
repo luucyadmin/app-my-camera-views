@@ -57,7 +57,7 @@ build_app:
     - npm i
     - git config user.email "$GITLAB_GIT_USR_EMAIL"
     - git config user.name "$GITLAB_GIT_USR_NAME"
-    - git remote add gitlab_origin https://${REPOSITORY_TOKEN}@gitlab.com/${CI_PROJECT_PATH}.git
+    - git remote add gitlab_origin https://repository-write:${REPOSITORY_TOKEN}@gitlab.com/${CI_PROJECT_PATH}.git
     - git status
     - git reset --hard
     - luucy scope build

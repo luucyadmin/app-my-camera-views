@@ -5,7 +5,7 @@ variables:
   # Gitlab GIT user config for pipeline
   GITLAB_GIT_USR_EMAIL: 'gitlab_pipeline@luucy.ch'
   GITLAB_GIT_USR_NAME: 'gitlab_pipeline'
-  GITLAB_REGISTRY_URL: 'https://gitlab.com/api/v4/projects/43757880/packages/generic'
+  GITLAB_REGISTRY_URL: '$CI_API_V4_URL/projects/43757880/packages/generic'
 
 stages:
   - translation
@@ -57,7 +57,7 @@ build_app:
     - npm i
     - git config user.email "$GITLAB_GIT_USR_EMAIL"
     - git config user.name "$GITLAB_GIT_USR_NAME"
-    - git remote add gitlab_origin $CI_REPOSITORY_URL
+    - git remote add gitlab_origin https://${REPOSITORY_TOKEN}@gitlab.com/${CI_PROJECT_PATH}.git
     - git status
     - git reset --hard
     - luucy scope build

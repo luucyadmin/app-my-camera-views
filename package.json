@@ -3,7 +3,7 @@
 	"displayName": "Camera Control",
 	"icon": "icon.svg",
 	"author": "LUUCY AG",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"internal": true,
 	"dependencies": {
 		"luucy-types": "^8.14.4",

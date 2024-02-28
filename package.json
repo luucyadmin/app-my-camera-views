@@ -3,7 +3,7 @@
 	"displayName": "My camera views",
 	"icon": "icon.svg",
 	"author": "LUUCY AG",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"internal": true,
 	"dependencies": {
 		"luucy-types": "^8.14.4",

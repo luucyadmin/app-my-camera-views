@@ -1,6 +1,6 @@
 {
-	"name": "camera-control",
-	"displayName": "Camera Control",
+	"name": "my-camera-views",
+	"displayName": "My camera views",
 	"icon": "icon.svg",
 	"author": "LUUCY AG",
 	"version": "1.0.3",

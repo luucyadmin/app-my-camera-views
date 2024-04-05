@@ -7,7 +7,8 @@ include:
   - component: gitlab.com/luucy/sdk/ci-components/build_try@main
   - component: gitlab.com/luucy/sdk/ci-components/build_publish@main
   - component: gitlab.com/luucy/sdk/ci-components/deployment@main
-    # TODO: uncomment when defined
-    # inputs:
+    inputs:
+      environments: https://app.dev.dev.luucy.ch https://app.staging33.dev.luucy.ch 
     #   environments: LUUCY_DEPLOYMENT_ENVS
+
   

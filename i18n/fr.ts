@@ -1,7 +1,12 @@
 export default {
-  Save_Camera_Instruction: "Déplacez la caméra vers un emplacement intéressant et cliquez sur Enregistrer la caméra pour sauvegarder l’emplacement actuel de la caméra ! Vous pouvez restaurer les caméras en cliquant sur Voler vers la caméra ci-dessous",
-  Save_Camera: "Enregistrer la caméra",
-  Remove_Camera: "Supprimer la caméra",
-  Name: "Nom",
-  Fly_To_Camera: "Voler vers la caméra"
+  Loading: "Chargement",
+  Click_map_to_see_info: "Cliquez sur la carte pour afficher des informations sur la ligne de construction sélectionnée.",
+  Delete_building_line: "Supprimer",
+  Canton: 'Canton',
+  Main_Usage: "Utilisation principale",
+  Published_at: "Publié le",
+  Show_Point_Markers: "Afficher les marqueurs de points",
+  Focus: "Mise au point",
+  Download_GeoJSON: "GeoJSON télécharger",
+  Add_as_Shape: "Ajouter comme forme"
 };

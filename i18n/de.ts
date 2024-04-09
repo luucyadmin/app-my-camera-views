@@ -1,7 +1,12 @@
 export default {
-  Save_Camera_Instruction: "Bewegen Sie die Kamera an einen interessanten Ort und klicken Sie auf Kamera speichern, um die aktuelle Kameraposition zu speichern! Sie können die Kameras wiederherstellen, indem Sie unten auf Zur Kamera fliegen klicken",
-  Save_Camera: "Kamera speichern",
-  Remove_Camera: "Kamera entfernen",
-  Name: 'Name',
-  Fly_To_Camera: "Zur Kamera fliegen"
+  Loading: "Lädt",
+  Click_map_to_see_info: "Klicken Sie auf die Karte, um Informationen über die ausgewählte Baulinie anzuzeigen.",
+  Delete_building_line: "Entfernen",
+  Canton: "Kanton",
+  Main_Usage: "Hauptnutzung",
+  Published_at: "Publiziert am",
+  Show_Point_Markers: "Punktemarkierungen anzeigen",
+  Focus: "Fokussieren",
+  Download_GeoJSON: "GeoJSON herunterladen",
+  Add_as_Shape: "Als Form hinzufügen"
 };

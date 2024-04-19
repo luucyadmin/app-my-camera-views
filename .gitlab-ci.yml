@@ -8,7 +8,7 @@ include:
   - component: gitlab.com/luucy/sdk/ci-components/build_publish@main
   - component: gitlab.com/luucy/sdk/ci-components/deployment@main
     inputs:
-      environments: https://app.dev.dev.luucy.ch/ https://app.dev33.dev.luucy.ch/ https://app.staging33.dev.luucy.ch/
-    #   environments: LUUCY_DEPLOYMENT_ENVS
+      #environments: https://app.dev.dev.luucy.ch/ https://app.dev33.dev.luucy.ch/ https://app.staging33.dev.luucy.ch/
+      environments: $LUUCY_DEPLOYMENT_ENVS
 
   

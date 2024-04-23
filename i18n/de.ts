@@ -1,12 +1,7 @@
 export default {
-  Loading: "Lädt",
-  Click_map_to_see_info: "Klicken Sie auf die Karte, um Informationen über die ausgewählte Baulinie anzuzeigen.",
-  Delete_building_line: "Entfernen",
-  Canton: "Kanton",
-  Main_Usage: "Hauptnutzung",
-  Published_at: "Publiziert am",
-  Show_Point_Markers: "Punktemarkierungen anzeigen",
-  Focus: "Fokussieren",
-  Download_GeoJSON: "GeoJSON herunterladen",
-  Add_as_Shape: "Als Form hinzufügen"
+  Save_Camera_Instruction: 'Move the camera to an interesting location and click on Save Camera to save the current camera location! You can restore the cameras by click on fly to camera below',
+  Save_Camera: 'Save Camera',
+  Remove_Camera: 'Remove Camera',
+  Name: 'Name',
+  Fly_To_Camera: 'Fly to camera'
 };

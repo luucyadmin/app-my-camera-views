@@ -1,7 +1,7 @@
 export default {
-  Save_Camera_Instruction: 'Move the camera to an interesting location and click on Save Camera to save the current camera location! You can restore the cameras by click on fly to camera below',
-  Save_Camera: 'Save Camera',
-  Remove_Camera: 'Remove Camera',
-  Name: 'Name',
-  Fly_To_Camera: 'Fly to camera'
+  Save_Camera_Instruction: "Déplacez la caméra vers un emplacement intéressant et cliquez sur Enregistrer la caméra pour sauvegarder l’emplacement actuel de la caméra ! Vous pouvez restaurer les caméras en cliquant sur \"Voler vers la caméra\" ci-dessous",
+  Save_Camera: "Enregistrer la caméra",
+  Remove_Camera: "Supprimer la caméra",
+  Name: "Nom",
+  Fly_To_Camera: "Voler vers la caméra"
 };

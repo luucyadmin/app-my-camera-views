@@ -1,6 +1,6 @@
-import de from "./i18n/de";
-import en from "./i18n/en";
-import fr from "./i18n/fr";
+import de from "./i18n/my-camera-views.de";
+import en from "./i18n/my-camera-views.en";
+import fr from "./i18n/my-camera-views.fr";
 
 type I18nParams = {[key: string]: any};
 type I18nFunction = {

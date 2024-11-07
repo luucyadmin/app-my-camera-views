@@ -12,8 +12,9 @@
 	},
 	"scopes": [
 		"core",
-		"ui",
+		"data",
 		"map",
-		"map.camera"
+		"map.camera",
+		"ui"
 	]
 }

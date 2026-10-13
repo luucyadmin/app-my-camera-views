@@ -5,9 +5,9 @@
 	"author": "LUUCY AG",
 	"internal": true,
 	"productId": 241,
-	"version": "1.0.17",
+	"version": "1.0.18",
 	"dependencies": {
-		"luucy-types": "git+ssh://git@gitlab.com:luucy/sdk/luucy-types.git#next/3.9",
+		"luucy-types": "git+ssh://git@gitlab.com:luucy/sdk/luucy-types.git#next/10.24.22",
 		"typescript": "^5.6.3"
 	},
 	"scopes": [
